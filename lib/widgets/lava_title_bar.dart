@@ -6,6 +6,7 @@ class LavaTitleBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Color.fromRGBO(238, 209, 172, 1),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [Text("LAVA", style: TextStyle(

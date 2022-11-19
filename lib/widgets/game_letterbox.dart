@@ -6,7 +6,12 @@ class GameLetterbox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("grid"),
+      width: 55,
+      height: 55,
+      alignment: Alignment.center,
+      padding: EdgeInsets.all(10),
+      margin: EdgeInsets.all(2),
+      decoration: BoxDecoration(border: Border.all(color: Colors.grey, width: 2),),
     );
   }
 }
