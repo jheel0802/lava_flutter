@@ -11,23 +11,16 @@ class GameKeyboard extends StatelessWidget {
       children: [
         Row(
           mainAxisSize: MainAxisSize.min,
-          children: [
-            for (var i in "QWERTYUIOP".split("")) GameKey(i)
-          ],
+          children: [for (var i in "QWERTYUIOP".split("")) GameKey(i)],
         ),
         Row(
           mainAxisSize: MainAxisSize.min,
-          children: [
-            for (var i in "ASDFGHJKL".split("")) GameKey(i)
-          ],
+          children: [for (var i in "ASDFGHJKL".split("")) GameKey(i)],
         ),
         Row(
           mainAxisSize: MainAxisSize.min,
-          children: [
-            for (var i in "ZXCVBNM".split("")) GameKey(i)
-          ],
+          children: [for (var i in "_ZXCVBNM<".split("")) GameKey(i)],
         ),
-        
       ],
     );
   }
