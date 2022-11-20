@@ -12,14 +12,13 @@ class GamePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color.fromARGB(255, 123, 87, 66),
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [LavaTitleBar(), GameGrid(), GameKeyboard()],
-        )
-      ),
+          color: Color.fromARGB(255, 123, 87, 66),
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [LavaTitleBar(), GameGrid(), GameKeyboard()],
+          )),
     );
   }
 }
