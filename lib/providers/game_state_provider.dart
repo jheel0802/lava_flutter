@@ -22,7 +22,7 @@ class GameState {
   GameState clone({List<String>? validWords, String? correctWord, List<String>? attempts, int? attempted}) {
     return GameState(
       validWords: validWords ?? this.validWords,
-      correctWord: this.correctWord,
+      correctWord: correctWord ?? this.correctWord,
       settings: this.settings,
       attempted: attempted ?? this.attempted,
       attempts: attempts ?? this.attempts);
