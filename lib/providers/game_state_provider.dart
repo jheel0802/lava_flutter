@@ -63,6 +63,7 @@ class GameStateNotifier extends StateNotifier<GameState> {
         print("attempted word incomplete");
         return;
       }
+      
 
       state=state.clone(
         attempted: state.attempted+1
@@ -90,8 +91,15 @@ class GameStateNotifier extends StateNotifier<GameState> {
         attempts: attempts
       );
     }
+    if(currentAttempt==state.correctWord){
+        print("Game Over");
+        return;
+    }
+    if(attempts.length>5){
+      print("Attempts Exceeded");
+        return;
+    }
   }
-
 }
 
 final gameStateProvider = StateNotifierProvider<GameStateNotifier, GameState>((ref) {
